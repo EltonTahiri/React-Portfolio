@@ -73,6 +73,7 @@ section > h2{
 }
 
 a {
+
     color: var(--color-primary);
     transition: var(--transition); 
 }
@@ -101,6 +102,7 @@ a:hover {
 .btn-primary{
     background: var(--color-primary);
     color: var(--color-bg);
+    gap: 3rem;
 }
 
 img{
@@ -111,7 +113,7 @@ img{
 
 
 /* Media Queries(Mid Devices) */
-@media screen and(max-width: 1024px) {
+@media screen and( max-width: 1024px) {
     .container {
         width: var(--container-width-md);
     }
@@ -121,7 +123,7 @@ img{
 }
 
 /* Media Queries(Small Devices) */
-@media screen and(max-width: 600px) {
+@media screen and( max-width: 600px) {
     .container {
         width: var(--container-width-sm);
     }

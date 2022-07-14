@@ -1,0 +1,74 @@
+header {
+    height: 110vh;
+    padding-top: 4rem;
+    overflow: hidden;
+}
+
+
+.header__container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/*CTA*/
+.cta {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/*HSocials*/
+
+.header__socials{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    position: relative;
+}
+
+
+/* Profile Image */
+
+.photo{
+    background: linear-gradient(var(--color-primary),transparent);
+    width: 15rem;
+    height: 20rem;
+    position: absolute;
+    left: calc(50% - 7.5rem);
+    margin-top: 1rem;
+    border-radius: 5rem 5rem 0 0;
+    overflow: hidden;
+    
+}
+
+@media (max-width: 1024px){
+    header {
+        height: 68vh;
+        padding-top: 4rem;
+    }
+    .cta{
+        margin-top: 2rem;
+    }
+    .photo{
+        width: 15rem;
+        height: 25rem;
+        position: absolute;
+        left: calc(50% - 7.5rem);
+    }
+}
+
+@media (max-width: 600px) {
+    header{
+        height: 100vh;
+        padding-top: 5rem;
+    }
+    .photo{
+        width: 22rem;
+        height: 30rem;
+        position: absolute;
+        left: calc(50% - 11rem);
+    }
+}
+
