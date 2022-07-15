@@ -1,7 +1,8 @@
 header {
-    height: 110vh;
-    padding-top: 4rem;
+    height: 100vh;
+    padding-top: 7rem;
     overflow: hidden;
+
 }
 
 
@@ -13,7 +14,7 @@ header {
 
 /*CTA*/
 .cta {
-    margin-top: 0.5rem;
+    margin-top: 2.5rem;
     display: flex;
     gap: 1.2rem;
     justify-content: center;
@@ -24,8 +25,9 @@ header {
 .header__socials{
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
+    gap: .7rem;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 
@@ -33,42 +35,25 @@ header {
 
 .photo{
     background: linear-gradient(var(--color-primary),transparent);
-    width: 15rem;
-    height: 20rem;
+    width: 22rem;
+    height: 30rem;
     position: absolute;
-    left: calc(50% - 7.5rem);
-    margin-top: 1rem;
-    border-radius: 5rem 5rem 0 0;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
     overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
     
 }
 
-@media (max-width: 1024px){
+@media screen and(max-width: 1024px){
     header {
         height: 68vh;
-        padding-top: 4rem;
-    }
-    .cta{
-        margin-top: 2rem;
-    }
-    .photo{
-        width: 15rem;
-        height: 25rem;
-        position: absolute;
-        left: calc(50% - 7.5rem);
     }
 }
 
-@media (max-width: 600px) {
+@media screen and(max-width: 600px) {
     header{
         height: 100vh;
-        padding-top: 5rem;
-    }
-    .photo{
-        width: 22rem;
-        height: 30rem;
-        position: absolute;
-        left: calc(50% - 11rem);
-    }
+  }
 }
-

@@ -8,6 +8,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -25,9 +26,9 @@
     --container-width-sm: 90%;
 }
 
-html {
+html{
     scroll-behavior: smooth;
-}
+  }
 
 ::-webkit-scrollbar {
     display: none;
@@ -36,6 +37,7 @@ html {
 body{
     font-family: 'Poppins', sans-serif;
     background: var(--color-bg);
+    background-image: url("./assets/60-lines.png");
     color: var(--color-white);
     line-height: 1.7;
 }
@@ -56,6 +58,8 @@ h1{
 
 section {
     margin-top: 8rem;
+    height: 100vh;
+    scroll-behavior: smooth;
 }
 
 section > h2, section > h5{ 

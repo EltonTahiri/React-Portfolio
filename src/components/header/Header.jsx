@@ -3,6 +3,7 @@ import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/IMG_3671.png'
 import HeaderSocials from './HeaderSocials'
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 const Header = () => {
