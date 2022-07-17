@@ -30,7 +30,7 @@ const dataArray = [
   {
     id: 4,
     image: IMG4,
-    title: ' JavaScript Quiz ',
+    title: 'JavaScript Quiz',
     github: 'https://github.com/EltonTahiri/Quiz-App'
   },
   {
