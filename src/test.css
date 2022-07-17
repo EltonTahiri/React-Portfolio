@@ -12,9 +12,9 @@
 }
 
 :root {
-     --color-bg: #1A2980;
-    --color-bg-variant: #0000FF;
-    --color-primary: #4db5ff;
+     --color-bg: black;
+    --color-bg-variant: orange;
+    --color-primary: orange;
     --color-primary-variant: rgba(77, 181, 255, 0,4);
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0,6);
@@ -37,7 +37,7 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     background: var(--color-bg);
-    background-image: url("./assets/60-lines.png");
+    background-image: url("./assets/3px-tile.png");
     color: var(--color-white);
     line-height: 1.7;
 }
@@ -83,6 +83,9 @@ a {
 
 a:hover {
     color: var(--color-white)
+}
+footer{
+    height: 220px;
 }
 
 .btn {
@@ -134,6 +137,5 @@ img{
         margin-bottom: 2rem;
     }
 }
-
 
 

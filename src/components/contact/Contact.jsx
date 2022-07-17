@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './contact.css'
 import {MdEmail} from 'react-icons/md'
 import {BsMessenger} from 'react-icons/bs'
@@ -7,13 +7,14 @@ import emailjs from 'emailjs-com'
 
 const Contact = () => {
   const form = useRef();
-
+  const [done,setDone] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_aqqnon5', 'template_3dtdz8n', form.current, 'Lj6vi4nGFMs6VWhCC')
       .then((result) => {
           console.log(result.text);
+          setDone(true);
       }, (error) => {
           console.log(error.text);
       });
@@ -48,7 +49,8 @@ const Contact = () => {
           <input type="text" name='name' placeholder='Your Full Name' required />
           <input type="email" name='email' placeholder='Type your email' required />
           <textarea name="message" placeholder='Your message' rows="7" required ></textarea>
-          <button type='submit' className='btn btn-primary'>Send Message</button>
+          <button type='submit' className='btn btn-primary' >Send Message</button>
+          {done && "Message has been sent!"}
         </form>
       </div>
     </section>
