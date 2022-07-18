@@ -10,8 +10,8 @@ const Footer = () => {
 
 
       <div className="footer__socials">
-        <a href="https://facebook.com/eltoni133"><AiFillFacebook /></a>
-        <a href="https://instagram.com/_eltontahiri"><BsInstagram /></a>
+        <a href="https://facebook.com/eltoni133" target='_blank'><AiFillFacebook /></a>
+        <a href="https://instagram.com/_eltontahiri" target='_blank'><BsInstagram /></a>
       </div>
 
       <div className="footer__copyright">
